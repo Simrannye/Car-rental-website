@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User</title>
+<link rel="stylesheet" href="admin.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav>
+        <a href="#" class="logo">
+            <img src="icon/Black Modern Car Automotive Logo (1).png" alt="Vroom Logo">
+        </a>
+        <a href="index2.html">Home</a>
+        <a href="About.html">About Us</a>
+        <a href="rent.html">Rent a Car</a>
+        <a href="contact.html">Contact us</a> 
+
+        <a href="user.html" class="user"><img src="icon/user.png" alt=""></a>
+        <a href="index.html" class="sign-in-btn">Sign Out</a>
+ 
+    </nav>
+</header>
+<div class="heading">
+    <h2>Welcome To Admin Dashboard</h2>
+</div>
+
+<div class="Admin-bar">
+    <a href="Admin.html">DashBoard</a>
+    <a href="#" id="showCarModal">Available cars</a>
+    <a href="adminsett.html">Settings</a>
+</div>
+
+<!-- Car Modal -->
+<div id="carModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeCarModal">&times;</span>
+        <h2>Cars Available</h2>
+        <img src="icon/SUVPIC.jpg" alt="Car Image 1" class="modal-image">
+        <img src="icon/sedanpic.jpg" alt="Car Image 2" class="modal-image">
+        <img src="icon/economy.png" alt="Car Image 3" class="modal-image">
+        <img src="icon/kia.jpg" alt="Car Image 3" class="modal-image">
+
+    
+
+        <h2>Drivers available</h2>
+        <img src="driver/d1.jpg" alt="Car Image 1" class="modal-image">
+        <img src="driver/d2.jpg" alt="Car Image 2" class="modal-image">
+        <img src="driver/d3.jpg" alt="Car Image 3" class="modal-image">
+        <img src="driver/d4.jpg" alt="Car Image 1" class="modal-image">
+        <img src="driver/d1.jpg" alt="Car Image 2" class="modal-image">
+       
+
+
+
+    </div>
+</div>
+
+<div class="booking-table">
+    <h2>Total Booking</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>User name</th>
+                <th>Car</th>
+                <th>Duration</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2024-04-15</td>
+                <td>Sam Lama</td>
+                <td>Toyota Camry</td>
+                <td>3 days</td>
+            </tr>
+            <tr>
+                <td>2024-04-14</td>
+                <td>Ashrya tamlakar</td>
+                <td>BYD Suv</td>
+                <td>7 days</td>
+            </tr>
+            <tr>
+                <td>2024-03-15</td>
+                <td>Suraj Singh</td>
+                <td>Kia seltros</td>
+                <td>8 days</td>
+            </tr>
+            <tr>
+                <td>2024-03-11</td>
+                <td>Sam Lama</td>
+                <td>Toyota Camry</td>
+                <td>3 days</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="employee-table">
+    <h2>Employee</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Username</th>
+                <th>Booked</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ashutosh Sharma</td>
+                <td>yes</td>
+                
+            </tr>
+            <tr>
+                <td>2</td>
+                <td> Sharan Maharjan</td>
+                <td>No</td>
+                
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Ashsis Kc</td>
+                <td>yes</td>
+                
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Samir lama</td>
+                <td>No</td>
+                
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script>
+    // Get the modal elements
+var carModal = document.getElementById('carModal');
+var showCarModalBtn = document.getElementById('showCarModal');
+var closeCarModalBtn = document.getElementById('closeCarModal');
+
+// When the user clicks the button, open the car modal
+showCarModalBtn.onclick = function() {
+    carModal.style.display = 'block';
+}
+
+// When the user clicks on <span> (x), close the modal
+closeCarModalBtn.onclick = function() {
+    carModal.style.display = 'none';
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == carModal) {
+        carModal.style.display = 'none';
+    }
+}
+
+</script>
+</body>
+</html>

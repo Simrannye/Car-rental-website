@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin</title>
+<link rel="stylesheet" href="adminsett.css">
+<link rel="stylesheet" href="admin.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav>
+        <a href="#" class="logo">
+            <img src="icon/Black Modern Car Automotive Logo (1).png" alt="Vroom Logo">
+        </a>
+        <a href="index2.html">Home</a>
+        <a href="About.html">About Us</a>
+        <a href="rent.html">Rent a Car</a>
+        <a href="contact.html">Contact us</a> 
+
+        <a href="user.html" class="user"><img src="icon/user.png" alt=""></a>
+        <a href="index.html" class="sign-in-btn">Sign Out</a>
+ 
+    </nav>
+</header>
+<div class="heading">
+    <h2>Welcome To Admin Dashboard</h2>
+</div>
+
+<div class="Admin-bar">
+    <a href="Admin.html">DashBoard</a>
+    <a href="adminsett.html">Settings</a>
+</div>
+
+<div class="password">
+    <form id="passwordForm" action="">
+        <h2>Change Password</h2>
+        <input id="currentPassword" type="password" placeholder="Current Password" required>
+        <input id="newPassword" type="password" placeholder="New Password" required>
+        <button type="submit">Change Password</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById('passwordForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const currentPassword = document.getElementById('currentPassword').value;
+        const newPassword = document.getElementById('newPassword').value;
+
+        console.log('Current Password:', currentPassword);
+        console.log('New Password:', newPassword);
+
+    });
+</script>
+</body>
+</html>

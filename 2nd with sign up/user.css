@@ -1,0 +1,93 @@
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* User bar styles */
+.user-bar, .booking, .loyalty {
+    background-color: #7d94db;
+    width: 200px;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 10px 20px;
+}
+
+.user-bar a {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.user-bar a:hover {
+    background-color: #5560a6;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.heading h2 {
+    font-size: 2em;
+    text-align: left;
+    margin-top: 40px; /* Align to the left */
+    margin-bottom: 30px; /* Move it lower */
+    margin-left: 20px; /* Add margin to the left */
+}
+
+.booking-table,
+.loyalty-table {
+    position: absolute;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 250px;
+
+}
+
+.booking-table {
+    top: 311px;
+    right: 451px;
+
+}
+
+.loyalty-table {
+    top: 311px;
+    left: 703px;}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+th:first-child,
+td:first-child {
+    border-left: none;
+}
+
+th:last-child,
+td:last-child {
+    border-right: none;
+}

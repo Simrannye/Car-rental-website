@@ -1,0 +1,48 @@
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+}
+
+.teamimg img {
+    max-width: 100%;
+    height: auto;
+}
+
+.background {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+#contact {
+    margin-top: 20px;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    font-size: 0.8em;
+}
+/* body{
+background-image: url('icon/porche.jpg');
+    
+background-size: 100% 100%;
+
+background-position: center;
+
+background-attachment: fixed;
+background-color: rgba(249, 249, 249, 0.7);
+} */

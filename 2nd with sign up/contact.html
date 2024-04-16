@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vroom</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="st.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="icon/Black Modern Car Automotive Logo (1).png" alt="Vroom Logo">
+            </a>
+            <a href="index.html">Home</a>
+            <a href="About.html">About Us</a>
+            <a href="rent.html">Rent a Car</a>
+            <a href="contact.html">Contact us</a> 
+            <a href="Log.html" class="sign-in-btn">Log In</a>
+        </nav>
+    </header>    
+    <div class="container">
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+    <div class="review">
+    <h2>Reviews By Customers</h2>
+    <p>Our customers rave about the exceptional experience they have with our car rental company. Many have expressed their appreciation for our diverse fleet of reliable, well-maintained vehicles that cater to their varied needs.</p>
+    <div id="review">
+        
+        <div class="review-item">
+            <img src="icon/rakhi.jpg" alt="Reviewer 1">
+            <p>Rakhi Gurung</p>
+            <p>Best place to rent!!!</p>
+        </div>
+        <div class="review-item">
+            <img src="icon/sam pradhan.jpg" alt="Reviewer 2">
+            <p>Sam Pradhan</p>
+            <p>Good Service </p>
+        </div>
+        <div class="review-item">
+            <img src="icon/jennie.jpg" alt="Reviewer 3">
+            <p>Jennie Gurung</p>
+            <p>Used it once would use it again for sure!!</p>
+        </div>
+    </div>
+</div>
+
+    <div class="special-offer animated">
+        <h2>Special Offer</h2>
+        <p>Get 20% off your first rental! Book now.</p>
+        <a href="rent.html" class="cta-button">Book Now</a>
+    </div>
+    <div class="social-media-links">
+        <a href="https://www.instagram.com/snehascare/" target="_blank">
+            <img src="icon/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+            <img src="icon/facebook.png" alt="Facebook">
+        </a>
+    </div>
+    <footer>
+        <p>&copy; 2024 Vroom. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+            
+            
+            var formData = new FormData(this);
+            
+            
+            var formObject = {};
+            formData.forEach(function(value, key) {
+                formObject[key] = value;
+            });
+            
+           
+            console.log("Form Data:", formObject);
+            
+            
+            alert("Done");
+        });
+    </script>
+</body>
+</html>

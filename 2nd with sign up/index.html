@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vroom</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="rent.css">
+
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="icon/Black Modern Car Automotive Logo (1).png" alt="Vroom Logo">
+            </a>
+            <a href="index.html">Home</a>
+            <a href="About.html">About Us</a>
+            <a href="rent.html">Rent a Car</a>
+            <a href="contact.html">Contact us</a> 
+            <a href="Log.html" class="sign-in-btn">Log In</a>
+
+        </nav>
+    </header>
+
+        <div class="image-container">
+            <img src="icon/carr.png" alt="Image description">
+            <button class="first-reserve" onclick="openPopup()">Book Now!!</button>
+          </div>
+          <div id="popup" class="hidden">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Phone Number">
+                    <label for="car-type">Select Car Type:</label>
+                    <select id="car-type" name="car-type">
+                        <option value="compact">Compact</option>
+                        <option value="sedan">Sedan</option>
+                        <option value="suv">SUV</option>
+                    </select>
+                    <label for="car-type">Select Fuel Type:</label>
+                    <select id="fuel-type" name="fuel-type">
+                        <option value="Petrol">Petrol</option>
+                        <option value="Diesel">Diesel</option>
+                        <option value="Electric">Electric</option>
+                    </select>
+                    <br>
+                    <label for="rent-date">Select Pickup Date:</label>
+                    <input type="date" id="rent-date" name="rent-date">
+                    <label for="rent-date">Select Drop Date:</label>
+                    <input type="date" id="rent-date" name="rent-date"><br>
+                    <button type="submit">Submit</button>
+                
+                </form>
+            </div>
+        </div>
+        </div>
+        <div class="Topic">
+            <h1>Welcome to Vroom</h1>
+            <p>  Whether you're looking for a reliable car for a weekend getaway or a spacious vehicle for a family road trip Experience the convenience and comfort of Vroom rentals on your next journey!</p>
+            
+            <img src="icon/red.jpg" alt="back">
+
+            <p>At Vroom, we're committed to providing top-notch customer service and ensuring your satisfaction every step of the way. Our friendly and knowledgeable staff are here to help you find the perfect vehicle for your needs and answer any questions you may have.</p>
+        </div>
+
+        <div class="image-row">
+            <img src="icon/animation/car-wash.png" alt="Image 1">
+            <img src="icon/animation/right-arrow.png" alt="Image 2">
+
+            <img src="icon/animation/car-key.png" alt="Image 2">
+            <img src="icon/animation/right-arrow.png" alt="Image 2">
+
+
+            <img src="icon/animation/location.png" alt="Image 3">
+            <img src="icon/animation/right-arrow.png" alt="Image 2">
+            <img src="icon/animation/car-insurance.png" alt="Image 2">
+
+            
+        </div>
+        
+        <h2>Brands available</h2>
+        <div id="brand" class="top">
+            <div class="brand-section">
+                <img src="icon/toyo.png" alt="Car 1">
+                <h3>Toyota</h3>
+            </div>
+            <div class="brand-section">
+                <img src="icon/byd.png" alt="Car 1">
+                <h3>Byd</h3>
+            </div>
+            <div class="brand-section">
+                <img src="icon/kia.png" alt="Car 1">
+                <h3>Kia</h3>
+            </div>
+        </div>
+        <a href="rent.html" class="dirrect-button">More Info</a>
+
+       <p> The specific mix of car brands and models will depend on the size and focus of the particular car rental company. Larger national chains tend to have a more diverse fleet, while smaller regional operators may concentrate on a few core brands. But in general, customers can expect to find a good selection of popular, reliable, and fuel-efficient vehicles to choose from.</p>
+
+        
+
+        <h2>Reviews By Customers</h2>
+        <p>Our customers rave about the exceptional experience they have with our car rental company. Many have expressed their appreciation for our diverse fleet of reliable, well-maintained vehicles that cater to their varied needs.</p>
+        <div id="review">
+            
+            <div class="review-item">
+                <img src="icon/review.jpg" alt="Reviewer 1">
+                <p>Risha Chaudary</p>
+                <p>Best Experience ever!!!</p>
+            </div>
+            <div class="review-item">
+                <img src="icon/priyanka.jpg" alt="Reviewer 2">
+                <p>Priyanka Karki</p>
+                <p>Good Service in Nepal for rental services</p>
+            </div>
+            <div class="review-item">
+                <img src="icon/anmol.jpg" alt="Reviewer 3">
+                <p>Anmol Kc</p>
+                <p>100% recommend Vroom.</p>
+            </div>
+        </div>
+
+        <div id="hero">
+ 
+            <h2>Our History</h2>
+            <p>ABC Company, founded in 1990, has evolved from a small Silicon Valley garage startup into a global leader in software solutions, with a diverse product line and a presence in over 20 countries.</p>
+    </div> 
+
+    
+
+    <div class="image-colage">
+        <img src="icon/road.jpg" alt="Image 1">
+        <img src="icon/ve.jpg" alt="Image 2">
+        <img src="icon/road2.jpg" alt="Image 3">
+    </div>
+  <p>With affordable rates, a massive variety of vehicles, and unbeatable service, Vroom makes renting a car simple and stress-free. Book your rental today and experience the Vroom difference!</p>
+
+
+  <h2>Contact Us</h2>
+
+    <div class="contact-container"> 
+        <div class="contact-details">
+            <h3>Address:</h3>
+            <p> 123 Main Street , City, State, ZIP ,Country</p>
+            <h3>Phone:</h3>
+            <p>(123) 456-7890</p>
+        </div>
+        <div class="contact-info">
+
+            <a href="https://www.google.com/maps/place/%E0%A4%9C%E0%A5%8B%E0%A4%B0%E0%A4%AA%E0%A4%BE%E0%A4%9F%E0%A5%80+%E0%A4%9A%E0%A5%8B%E0%A4%95+%E0%A4%B8%E0%A4%B9%E0%A4%BF%E0%A4%A6+%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%95/@27.7217996,85.3701227,17z/data=!3m1!4b1!4m6!3m5!1s0x39eb1bc6ffd38131:0x3eff7b6b7eedd676!8m2!3d27.7217949!4d85.3726976!16s%2Fg%2F11c1wwvnqr?entry=ttu" target="_blank">
+                <img src="icon/location.png" alt="Address on Map">
+            </a>
+        </div>
+
+        <p>For inquiries, please feel free to contact us using the information provided above.</p>
+    </div>
+
+    
+<footer>
+    <div class="social-media-links">
+        <a href="https://www.instagram.com/snehascare/" target="_blank">
+            <img src="icon/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+            <img src="icon/facebook.png" alt="Facebook">
+        </a>
+    </div>
+    <p>&copy; 2024 Vroom. All rights reserved.</p>
+</footer>
+    
+</body>
+</html>
